@@ -1,6 +1,10 @@
-Go to https://www.d3a.io/projects
-Click on create account
-Input valid email and password
-User should get a thank you message via mail to continue registration
-Clicking on the link should link user back to the login page
-User should login successfully by clicking on the login icon.
+describe("Test suite name",function(){
+    it("Test case name",function(){
+        cy.visit('http://www.d3a.io/projects')
+        cy.get('#email').type("ajibadeamos@gmail.com")
+        cy.get('#password').type("Ajibade45")
+        cy.wait(500)
+        cy.get('.button').click()
+      
+    })
+})
